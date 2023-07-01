@@ -1,5 +1,5 @@
 export type GitHubParameter = {
   baseURL?: string;
-  repository?: string;
   branch?: string;
+  repository?: string;
 };
