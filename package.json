@@ -1,7 +1,7 @@
 {
   "name": "@kemuridama/storybook-addon-github",
-  "version": "0.0.1",
-  "description": "An addon for Storybook to add link to GitHub.",
+  "version": "1.0.0",
+  "description": "A Storybook addon that allows you to link a source code of your story on GitHub.",
   "main": "preset.js",
   "files": [
     "dist",
