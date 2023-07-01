@@ -11,8 +11,9 @@
   ],
   "scripts": {
     "prebuild": "rimraf dist",
-    "prettier": "prettier --check .",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "check": "run-s check:*",
+    "check:eslint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "check:prettier": "prettier --check .",
     "build": "npm-run-all build:*",
     "build:esm": "babel ./src -d dist --extensions \".js,.jsx,.ts,.tsx\"",
     "build:type": "tsc --declaration --emitDeclarationOnly --outDir dist",
