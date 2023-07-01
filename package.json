@@ -1,0 +1,41 @@
+{
+  "name": "@kemuridama/storybook-addon-github",
+  "version": "0.0.1",
+  "description": "An addon for Storybook to add link to GitHub.",
+  "main": "preset.js",
+  "files": [
+    "dist",
+    "README.md",
+    "*.js",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "npm-run-all build:*",
+    "build:esm": "babel ./src -d dist --extensions \".js,.jsx,.ts,.tsx\"",
+    "build:type": "tsc --declaration --emitDeclarationOnly --outDir dist",
+    "prepublish": "npm run build"
+  },
+  "author": "Ryo Ochiai <ryo.ochiai@kemuridama.jp> (https://kemuridama.jp)",
+  "license": "MIT",
+  "peerDependencies": {
+    "@storybook/addons": "^7.0.21",
+    "@storybook/components": "^7.0.21",
+    "@storybook/manager-api": "^7.0.21",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@types/react": "^18.2.12",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "@primer/octicons-react": "^19.3.0"
+  }
+}
