@@ -11,7 +11,7 @@
     "github",
     "code"
   ],
-  "main": "preset.js",
+  "main": "manager.js",
   "files": [
     "dist",
     "README.md",
@@ -24,9 +24,8 @@
     "check:eslint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "check:prettier": "prettier --check .",
     "build": "npm-run-all build:*",
-    "build:cjs": "babel ./src -d dist/cjs --extensions \".js,.jsx,.ts,.tsx\"",
-    "build:esm": "babel ./src -d dist/esm --env-name esm --extensions \".js,.jsx,.ts,.tsx\"",
-    "build:type": "tsc --declaration --emitDeclarationOnly --outDir dist/type",
+    "build:esm": "babel ./src -d dist --extensions \".js,.jsx,.ts,.tsx\"",
+    "build:type": "tsc --declaration --emitDeclarationOnly --outDir dist",
     "prepublish": "npm run build"
   },
   "author": "Ryo Ochiai <ryo.ochiai@kemuridama.jp> (https://kemuridama.jp)",

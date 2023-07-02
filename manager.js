@@ -1,1 +1,1 @@
-import "dist/esm/manager";
+import "./dist/manager";
