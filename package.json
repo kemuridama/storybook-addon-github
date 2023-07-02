@@ -50,15 +50,15 @@
     "rimraf": "^5.0.1",
     "typescript": "^5.1.3"
   },
-  "dependencies": {
-    "@storybook/components": "^7.0.24",
-    "@storybook/manager-api": "^7.0.24",
-    "react": "^18.2.0"
-  },
   "storybook": {
     "displayName": "GitHub",
     "supportedFrameworks": [
       "react"
     ]
+  },
+  "peerDependencies": {
+    "@storybook/components": "^7",
+    "@storybook/manager-api": "^7",
+    "react": "^17 || ^18"
   }
 }
