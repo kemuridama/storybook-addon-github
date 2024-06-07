@@ -26,8 +26,10 @@ export const GitHub = ({ active, api }: Props) => {
   ].join("/");
 
   return (
-    <IconButton active={active} href={url} title="GitHub" target="_blank">
-      <Icons icon="github" />
+    <IconButton active={active}>
+      <a href={url} title="GitHub" target="_blank" rel="noreferrer">
+        <Icons icon="github" />
+      </a>
     </IconButton>
   );
 };
