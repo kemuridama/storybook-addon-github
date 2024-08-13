@@ -1,4 +1,5 @@
-import { IconButton, Icons } from "@storybook/components";
+import { IconButton } from "@storybook/components";
+import { GithubIcon } from "@storybook/icons";
 import { useParameter, API } from "@storybook/manager-api";
 import { GitHubParameter } from "./types";
 
@@ -28,7 +29,7 @@ export const GitHub = ({ active, api }: Props) => {
   return (
     <IconButton active={active}>
       <a href={url} title="GitHub" target="_blank" rel="noreferrer">
-        <Icons icon="github" />
+        <GithubIcon />
       </a>
     </IconButton>
   );
