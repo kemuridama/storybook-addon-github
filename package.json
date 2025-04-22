@@ -58,6 +58,6 @@
   "peerDependencies": {
     "@storybook/components": "^7 || ^8",
     "@storybook/manager-api": "^7 || ^8",
-    "react": "^17 || ^18"
+    "react": "^17 || ^18 || ^19"
   }
 }
