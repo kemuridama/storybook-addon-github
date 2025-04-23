@@ -57,6 +57,7 @@
   },
   "peerDependencies": {
     "@storybook/components": "^7 || ^8",
+    "@storybook/icons": "^1",
     "@storybook/manager-api": "^7 || ^8",
     "react": "^17 || ^18"
   }
