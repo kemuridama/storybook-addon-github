@@ -1,6 +1,6 @@
-import { IconButton } from "@storybook/components";
+import { IconButton } from "storybook/internal/components";
 import { GithubIcon } from "@storybook/icons";
-import { useParameter, API } from "@storybook/manager-api";
+import { useParameter, API } from "storybook/manager-api";
 import { GitHubParameter } from "./types";
 
 type Props = Readonly<{ active?: boolean; api: API }>;
