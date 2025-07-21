@@ -13,6 +13,9 @@ module.exports = {
     "plugin:typescript-sort-keys/recommended",
     "prettier",
   ],
+  rules: {
+    "import/no-unresolved": "off", // covered by typescript
+  },
   settings: {
     react: { version: "detect" },
   },
